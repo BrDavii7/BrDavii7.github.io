@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Início on Blog Jurídico do Davi</title>
-    <link>https://estudos-de-direito.github.io/</link>
+    <link>http://localhost:1313/</link>
     <description>Recent content in Início on Blog Jurídico do Davi</description>
     <generator>Hugo -- 0.157.0</generator>
     <language>pt-br</language>
     <lastBuildDate>Sat, 28 Feb 2026 00:29:01 -0300</lastBuildDate>
-    <atom:link href="https://estudos-de-direito.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Mini Introdução ao Direito Civil</title>
-      <link>https://estudos-de-direito.github.io/posts/introdu%C3%A7%C3%A3o-ao-direito-civil/</link>
+      <link>http://localhost:1313/posts/introdu%C3%A7%C3%A3o-ao-direito-civil/</link>
       <pubDate>Sat, 28 Feb 2026 00:29:01 -0300</pubDate>
-      <guid>https://estudos-de-direito.github.io/posts/introdu%C3%A7%C3%A3o-ao-direito-civil/</guid>
+      <guid>http://localhost:1313/posts/introdu%C3%A7%C3%A3o-ao-direito-civil/</guid>
       <description>&lt;h2 id=&#34;antes-de-começarmos-efetivamente-nosso-estudo-primeiro-devemos-entender-o-que-é-direito-civil&#34;&gt;Antes de começarmos efetivamente nosso estudo primeiro devemos entender o que é &lt;strong&gt;DIREITO CIVIL&lt;/strong&gt;.&lt;/h2&gt;
 &lt;p&gt;O Direito Civil é uma das ramificações mais abrangentes e vitais do Direito, considerado a espinha dorsal da ordem jurídica de muitos países. Ele governa nossas relações cotidianas, desde questões pessoais, como casamento e filiação, até assuntos de natureza patrimonial, como a compra de uma casa ou a celebração de um contrato.&lt;/p&gt;
 &lt;p&gt;Sendo assim, considerado como a área do Direito que seria a vida em sociedade, abrangendo as pessoas físicas e jurídicas (privadas ou públicas).
@@ -20,9 +20,9 @@ Não podemos esquecer que é principalmente regulamentado pelo (&lt;a href=&#34;
     </item>
     <item>
       <title>Áreas de Estudo</title>
-      <link>https://estudos-de-direito.github.io/areas/</link>
+      <link>http://localhost:1313/areas/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://estudos-de-direito.github.io/areas/</guid>
+      <guid>http://localhost:1313/areas/</guid>
       <description>&lt;h1 id=&#34;áreas-de-estudo&#34;&gt;Áreas de Estudo&lt;/h1&gt;
 &lt;h2 id=&#34;eca&#34;&gt;ECA&lt;/h2&gt;
 &lt;p&gt;Estudos voltados ao Estatuto da Criança e do Adolescente, princípios e aplicação prática.&lt;/p&gt;
@@ -33,9 +33,9 @@ Não podemos esquecer que é principalmente regulamentado pelo (&lt;a href=&#34;
     </item>
     <item>
       <title>Sobre</title>
-      <link>https://estudos-de-direito.github.io/about/</link>
+      <link>http://localhost:1313/about/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://estudos-de-direito.github.io/about/</guid>
+      <guid>http://localhost:1313/about/</guid>
       <description>&lt;h1 id=&#34;sobre-mim&#34;&gt;Sobre Mim&lt;/h1&gt;
 &lt;p&gt;Meu nome é Davi F.&lt;/p&gt;
 &lt;p&gt;Sou estudante de Direito com foco em magistratura.&lt;/p&gt;
