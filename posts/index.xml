@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Posts on Blog Jurídico do Davi</title>
+    <link>http://localhost:1313/posts/</link>
+    <description>Recent content in Posts on Blog Jurídico do Davi</description>
+    <generator>Hugo -- 0.157.0</generator>
+    <language>pt-br</language>
+    <lastBuildDate>Sat, 28 Feb 2026 00:29:01 -0300</lastBuildDate>
+    <atom:link href="http://localhost:1313/posts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Primeiro Artigo</title>
+      <link>http://localhost:1313/posts/primeiro-artigo/</link>
+      <pubDate>Sat, 28 Feb 2026 00:29:01 -0300</pubDate>
+      <guid>http://localhost:1313/posts/primeiro-artigo/</guid>
+      <description>&lt;p&gt;A proteção integral é um princípio fundamental previsto no Estatuto da Criança e do Adolescente.&lt;/p&gt;
+&lt;p&gt;Ela estabelece que crianças e adolescentes devem ser tratados como sujeitos de direitos&amp;hellip;&lt;/p&gt;
+&lt;h2 id=&#34;base-legal&#34;&gt;Base legal&lt;/h2&gt;
+&lt;p&gt;O artigo 1º do ECA determina que&amp;hellip;&lt;/p&gt;
+&lt;h2 id=&#34;conclusão&#34;&gt;Conclusão&lt;/h2&gt;
+&lt;p&gt;A proteção integral representa&amp;hellip;&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

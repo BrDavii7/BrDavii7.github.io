@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Início on Blog Jurídico do Davi</title>
+    <link>http://localhost:1313/</link>
+    <description>Recent content in Início on Blog Jurídico do Davi</description>
+    <generator>Hugo -- 0.157.0</generator>
+    <language>pt-br</language>
+    <lastBuildDate>Sat, 28 Feb 2026 00:29:01 -0300</lastBuildDate>
+    <atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Primeiro Artigo</title>
+      <link>http://localhost:1313/posts/primeiro-artigo/</link>
+      <pubDate>Sat, 28 Feb 2026 00:29:01 -0300</pubDate>
+      <guid>http://localhost:1313/posts/primeiro-artigo/</guid>
+      <description>&lt;p&gt;A proteção integral é um princípio fundamental previsto no Estatuto da Criança e do Adolescente.&lt;/p&gt;
+&lt;p&gt;Ela estabelece que crianças e adolescentes devem ser tratados como sujeitos de direitos&amp;hellip;&lt;/p&gt;
+&lt;h2 id=&#34;base-legal&#34;&gt;Base legal&lt;/h2&gt;
+&lt;p&gt;O artigo 1º do ECA determina que&amp;hellip;&lt;/p&gt;
+&lt;h2 id=&#34;conclusão&#34;&gt;Conclusão&lt;/h2&gt;
+&lt;p&gt;A proteção integral representa&amp;hellip;&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Áreas de Estudo</title>
+      <link>http://localhost:1313/areas/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/areas/</guid>
+      <description>&lt;h1 id=&#34;áreas-de-estudo&#34;&gt;Áreas de Estudo&lt;/h1&gt;
+&lt;h2 id=&#34;eca&#34;&gt;ECA&lt;/h2&gt;
+&lt;p&gt;Estudos voltados ao Estatuto da Criança e do Adolescente, princípios e aplicação prática.&lt;/p&gt;
+&lt;h2 id=&#34;teoria-geral-do-direito-civil&#34;&gt;Teoria Geral do Direito Civil&lt;/h2&gt;
+&lt;p&gt;Conceitos fundamentais, estrutura normativa e interpretação.&lt;/p&gt;
+&lt;h2 id=&#34;direito-digital&#34;&gt;Direito Digital&lt;/h2&gt;
+&lt;p&gt;Responsabilidade civil na internet, proteção de dados e novas tecnologias.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Sobre</title>
+      <link>http://localhost:1313/about/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/about/</guid>
+      <description>&lt;h1 id=&#34;sobre-mim&#34;&gt;Sobre Mim&lt;/h1&gt;
+&lt;p&gt;Meu nome é Davi F.&lt;/p&gt;
+&lt;p&gt;Sou estudante de Direito com foco em magistratura.&lt;/p&gt;
+&lt;p&gt;Este site tem como objetivo:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Organizar meus estudos&lt;/li&gt;
+&lt;li&gt;Compartilhar conhecimento jurídico&lt;/li&gt;
+&lt;li&gt;Analisar casos práticos&lt;/li&gt;
+&lt;li&gt;Desenvolver raciocínio jurídico crítico&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Acredito que o estudo constante e a prática da escrita são fundamentais para a formação de um jurista sólido.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>
