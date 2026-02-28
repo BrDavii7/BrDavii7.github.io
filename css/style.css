@@ -1,0 +1,331 @@
+/* === Estilo geral === */
+body {
+    margin: 0;
+    background: #1c1c1c;
+    font-family: Georgia, "Times New Roman", serif;
+    color: #eaeaea;
+    line-height: 1.8;
+}
+
+/* === Navbar === */
+.navbar {
+    background: #181818;
+    padding: 20px 0;
+    border-bottom: 1px solid rgba(255,255,255,0.08);
+}
+
+.nav-container {
+    max-width: 1100px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 15px;
+}
+
+.logo {
+    color: #c6a75e;
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 1.5rem;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+nav a {
+    color: #a78fff;
+    text-decoration: none;
+    margin-left: 30px;
+    transition: 0.3s;
+}
+
+nav a:hover {
+    color: #c6a75e;
+}
+
+/* === Landing Page === */
+body.landing-page main {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 0 20px;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+body.landing-page main h1 {
+    font-size: 3rem;
+    color: #f1f5f9;
+    margin-bottom: 20px;
+}
+
+body.landing-page main p {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+}
+
+body.landing-page .btn-landing {
+    padding: 14px 38px;
+    font-size: 1rem;
+    color: #c6a75e;
+    border: 1px solid #c6a75e;
+    border-radius: 4px;
+    text-decoration: none;
+    transition: all 0.35s ease;
+}
+
+body.landing-page .btn-landing:hover {
+    background: #c6a75e;
+    color: #0a0a0a;
+}
+
+/* === Posts com sidebar === */
+body.post-page main {
+    display: flex;
+    gap: 30px;
+    max-width: 1100px;
+    margin: 80px auto;
+    padding: 0 20px;
+}
+
+body.post-page main .post {
+    flex: 3;
+    background-color: #222;
+    padding: 40px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.4);
+    margin-bottom: 3em;
+}
+
+body.post-page main .sidebar {
+    flex: 1;
+    background-color: #222;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+    height: fit-content;
+}
+
+body.post-page main .sidebar h3 {
+    color: #f1f5f9;
+    margin-bottom: 15px;
+    border-bottom: 2px solid #c6a75e;
+    padding-bottom: 0.3em;
+}
+
+body.post-page main .sidebar ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+body.post-page main .sidebar li {
+    margin-bottom: 12px;
+}
+
+body.post-page main .sidebar a {
+    color: #a78fff;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+body.post-page main .sidebar a:hover {
+    color: #c6a75e;
+    text-decoration: underline;
+}
+
+/* === Posts individuais === */
+.post h1 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #f1f5f9;
+    margin-bottom: 0.5em;
+    border-bottom: 2px solid #c6a75e;
+    padding-bottom: 0.2em;
+}
+
+.post-date {
+    font-size: 0.9rem;
+    color: #a0a0a0;
+    margin-bottom: 1em;
+    display: block;
+}
+
+.post-author {
+    font-size: 0.9rem;
+    color: #c6a75e;
+    margin-bottom: 1em;
+}
+
+.post p {
+    margin-bottom: 1.5em;
+    font-size: 1.05rem;
+    line-height: 1.9;
+}
+
+.post a {
+    color: #a78fff;
+    text-decoration: underline;
+    transition: all 0.3s ease;
+}
+
+.post a:hover {
+    color: #c6a75e;
+}
+
+.post img {
+    max-width: 100%;
+    border-radius: 10px;
+    margin: 1.5em 0;
+    display: block;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.5);
+}
+
+.post h2,
+.post h3 {
+    color: #f1f5f9;
+    margin-top: 2em;
+    margin-bottom: 0.5em;
+    border-left: 4px solid #c6a75e;
+    padding-left: 0.5em;
+}
+
+pre {
+    background-color: #333;
+    padding: 1em;
+    border-radius: 8px;
+    overflow-x: auto;
+    margin: 1.5em 0;
+    color: #f1f5f9;
+}
+
+pre a {
+    color: #c6a75e;
+}
+
+blockquote {
+    border-left: 4px solid #c6a75e;
+    padding-left: 1em;
+    color: #d0d0d0;
+    font-style: italic;
+    margin: 1.5em 0;
+}
+
+/* === Botões dentro do post === */
+.btn {
+    display: inline-block;
+    padding: 12px 28px;
+    background: #c6a75e;
+    color: #0a0a0a;
+    border-radius: 6px;
+    text-decoration: none;
+    margin-top: 1.5em;
+    transition: all 0.3s ease;
+}
+
+.btn:hover {
+    background: #e0c078;
+}
+
+/* === Navegação entre posts === */
+.post-navigation {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 3em;
+    padding-top: 2em;
+    border-top: 1px solid rgba(255,255,255,0.1);
+}
+
+.post-navigation a {
+    color: #c6a75e;
+    font-weight: bold;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.post-navigation a:hover {
+    color: #e0c078;
+}
+
+/* === Cards de posts (listagem) === */
+.post-card {
+    padding: 20px;
+    margin-bottom: 20px;
+    border: 1px solid rgba(255,255,255,0.08);
+    border-radius: 8px;
+    transition: 0.3s;
+    background-color: #222;
+}
+
+.post-card:hover {
+    border-color: #c6a75e;
+    transform: translateY(-3px);
+}
+
+.post-card a {
+    text-decoration: none;
+    color: #a78fff;
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+
+.post-card a:hover {
+    color: #c6a75e;
+}
+
+.post-card .post-date {
+    display: block;
+    font-size: 0.9rem;
+    color: #a0a0a0;
+    margin-top: 5px;
+}
+
+/* === Página de transição === */
+#page-transition {
+    opacity: 1;
+    transition: opacity 0.4s ease;
+}
+
+#page-transition.fade-out {
+    opacity: 0;
+}
+
+/* === Responsivo === */
+@media (max-width: 768px) {
+    .nav-container {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .nav-container nav a {
+        margin-left: 0;
+        margin-top: 0.5em;
+    }
+
+    body.post-page main {
+        flex-direction: column;
+    }
+
+    body.post-page main .sidebar {
+        margin-top: 30px;
+    }
+
+    body.post-page main .post {
+        padding: 25px;
+    }
+
+    .post h1 {
+        font-size: 2rem;
+    }
+
+    .post p {
+        font-size: 1rem;
+    }
+
+    body.landing-page main {
+        padding: 0 15px;
+    }
+}

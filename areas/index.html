@@ -1,122 +1,12 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+<head>
     <meta charset="UTF-8">
     <title>Áreas de Estudo</title>
-    <style>
-        body {
-            margin: 0;
-            background: #1c1c1c;
-            font-family: Georgia, serif;
-            color: #eaeaea;
-        }
-
-        .navbar {
-            background: #181818;
-            padding: 20px 0;
-            border-bottom: 1px solid rgba(255,255,255,0.08);
-        }
-
-        .nav-container {
-            max-width: 1100px;
-            margin: 0 auto;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            padding: 0 15px;
-        }
-
-        .logo {
-            color: #c6a75e;
-            text-decoration: none;
-            font-weight: 700;
-            font-size: 1.5rem;
-            letter-spacing: 2px;
-            text-transform: uppercase;
-        }
-
-        nav a {
-            color: #cbd5e1;
-            text-decoration: none;
-            margin-left: 30px;
-            transition: 0.3s;
-        }
-
-        nav a:hover {
-            color: #c6a75e;
-        }
-
-        main {
-            max-width: 900px;
-            margin: 80px auto;
-            padding: 20px;
-        }
-        .landing {
-            height: 100vh;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            text-align: center;
-        }
-
-        .btn:hover {
-            background: #c6a75e;
-            color: #0f172a;
-        }
-
-        #page-transition {
-            opacity: 1;
-            transition: opacity 0.4s ease;
-        }
-
-        #page-transition.fade-out {
-            opacity: 0;
-        }
-
-        .post-card {
-            padding: 20px;
-            margin-bottom: 20px;
-            border: 1px solid rgba(255,255,255,0.08);
-            border-radius: 8px;
-            transition: 0.3s;
-        }
-
-        .post-card:hover {
-            border-color: #c6a75e;
-            transform: translateY(-3px);
-        }
-
-        .post-card a {
-            text-decoration: none;
-            color: #f1f5f9;
-        }
-
-        .btn-landing {
-            margin-top: 40px;
-            padding: 14px 38px;
-            font-size: 0.95rem;
-            letter-spacing: 1px;
-            text-transform: uppercase;
-
-            color: #c6a75e;
-            background: transparent;
-            border: 1px solid #c6a75e;
-
-            text-decoration: none;
-            border-radius: 2px;
-
-            transition: all 0.35s ease;
-        }
-
-        .btn-landing:hover {
-            background: #c6a75e;
-            color: #0a0a0a;
-        }
-    </style>
+    <link rel="stylesheet" href="/css/style.css">
 </head>
 
-<body>
+<body class="">
 
 <header class="navbar">
     <div class="nav-container">
@@ -131,11 +21,16 @@
 </header>
 
 <main>
+    
+    
     <div id="page-transition">
         
+<article class="post">
+    <h1>Áreas de Estudo</h1>
+    <span class="post-date">01 Jan 0001</span>
+    <span class="post-author">Por Autor Desconhecido</span>
 
-<h1>Áreas de Estudo</h1>
-<h1 id="áreas-de-estudo">Áreas de Estudo</h1>
+    <h1 id="áreas-de-estudo">Áreas de Estudo</h1>
 <h2 id="eca">ECA</h2>
 <p>Estudos voltados ao Estatuto da Criança e do Adolescente, princípios e aplicação prática.</p>
 <h2 id="teoria-geral-do-direito-civil">Teoria Geral do Direito Civil</h2>
@@ -144,8 +39,27 @@
 <p>Responsabilidade civil na internet, proteção de dados e novas tecnologias.</p>
 
 
+    <div class="post-navigation">
+      
+      <a href="/about/">← Sobre</a>
+      
+
+      <span></span>
+    </div>
+</article>
+
+<aside class="sidebar">
+    <h3>Posts Recentes</h3>
+    <ul>
+      
+      
+        <li><a href="/posts/introdu%C3%A7%C3%A3o-ao-direito-civil/">Mini Introdução ao Direito Civil</a></li>
+      
+    </ul>
+</aside>
 
     </div>
+    
 </main>
 
 </body>
