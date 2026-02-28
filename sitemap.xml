@@ -2,21 +2,21 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>http://localhost:1313/</loc>
+    <loc>https://estudos-de-direito.github.io/</loc>
     <lastmod>2026-02-28T00:29:01-03:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/posts/</loc>
+    <loc>https://estudos-de-direito.github.io/posts/introdu%C3%A7%C3%A3o-ao-direito-civil/</loc>
     <lastmod>2026-02-28T00:29:01-03:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/posts/primeiro-artigo/</loc>
+    <loc>https://estudos-de-direito.github.io/posts/</loc>
     <lastmod>2026-02-28T00:29:01-03:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/areas/</loc>
+    <loc>https://estudos-de-direito.github.io/areas/</loc>
   </url><url>
-    <loc>http://localhost:1313/categories/</loc>
+    <loc>https://estudos-de-direito.github.io/categories/</loc>
   </url><url>
-    <loc>http://localhost:1313/about/</loc>
+    <loc>https://estudos-de-direito.github.io/about/</loc>
   </url><url>
-    <loc>http://localhost:1313/tags/</loc>
+    <loc>https://estudos-de-direito.github.io/tags/</loc>
   </url>
 </urlset>
