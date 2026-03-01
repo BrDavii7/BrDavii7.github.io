@@ -380,6 +380,11 @@ body.post-page main .sidebar {
     font-weight: bold;
 }
 
+.mobile-toc {
+    display: none;
+}
+
+
 /* === Responsivo === */
 @media (max-width: 768px) {
 
@@ -389,7 +394,26 @@ body.post-page main .sidebar {
         padding-right: 0;
     }
 
-    
+        .mobile-toc {
+        display: block;
+        margin: 25px 0;
+        background: #1f1f1f;
+        padding: 15px;
+        border-radius: 10px;
+    }
+
+    .desktop-toc {
+        display: none;
+    }
+
+        #toc-content {
+        display: none;
+    }
+
+    #toc-content.active {
+        display: block;
+    }
+
 
     /* Navbar */
     .nav-container {

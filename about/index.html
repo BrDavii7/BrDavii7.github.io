@@ -29,13 +29,29 @@
 
 <main id="page-transition">
     
+
 <article class="post">
     <h1>Sobre</h1>
-    <span class="post-date">01 Jan 0001</span>
-    <span class="post-author">Por Autor Desconhecido</span>
+
+    <span class="post-date">
+        01 Jan 0001
+    </span>
+
+    <span class="post-author">
+        Por Autor Desconhecido
+    </span>
+
     <span class="post-reading-time">
-  ⏱ 1 min de leitura
-</span>
+        ⏱ 1 min de leitura
+    </span>
+
+    
+    <div class="mobile-toc">
+        <h3 onclick="toggleToc()" class="toc-title">Sumário ▼</h3>
+        <div class="toc" id="toc-content">
+            <nav id="TableOfContents"></nav>
+        </div>
+    </div>
 
     <h1 id="sobre-mim">Sobre Mim</h1>
 <p>Meu nome é Davi F.</p>
@@ -51,32 +67,37 @@
 
 
     <div class="post-navigation">
-      <span></span>
+        
+            <span></span>
+        
 
-      
-      <a href="/areas/">Áreas de Estudo →</a>
-      
+        
+            <a href="/areas/">Áreas de Estudo →</a>
+        
     </div>
 </article>
 
 <aside class="sidebar">
 
     
-    <h3 onclick="toggleToc()" class="toc-title">Sumário ▼</h3>
-    <div class="toc" id="toc-content">
-        <nav id="TableOfContents"></nav>
+    <div class="desktop-toc">
+        <h3>Sumário</h3>
+        <div class="toc">
+            <nav id="TableOfContents"></nav>
+        </div>
     </div>
 
     
     <h3>Posts Recentes</h3>
     <ul>
-      
-      
-        <li><a href="/posts/introdu%C3%A7%C3%A3o-ao-direito-civil/">Mini Introdução ao Direito Civil</a></li>
-      
+        
+        
+            <li><a href="/posts/introdu%C3%A7%C3%A3o-ao-direito-civil/">Mini Introdução ao Direito Civil</a></li>
+        
     </ul>
 
 </aside>
+
 
 </main>
 
