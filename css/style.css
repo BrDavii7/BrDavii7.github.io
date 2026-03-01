@@ -1,17 +1,22 @@
 /* === Estilo geral === */
 body {
     margin: 0;
-    background: #1c1c1c;
+    background: radial-gradient(circle at top, #222 0%, #141414 60%);
     font-family: Georgia, "Times New Roman", serif;
     color: #eaeaea;
     line-height: 1.8;
 }
 
+
 /* === Navbar === */
 .navbar {
-    background: #181818;
-    padding: 20px 0;
+    background: rgba(24, 24, 24, 0.85);
+    backdrop-filter: blur(6px);
+    padding: 22px 0;
     border-bottom: 1px solid rgba(255,255,255,0.08);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
 }
 
 .nav-container {
@@ -57,9 +62,11 @@ body.landing-page main {
 }
 
 body.landing-page main h1 {
-    font-size: 3rem;
-    color: #f1f5f9;
-    margin-bottom: 20px;
+    font-size: 3.2rem;
+    font-weight: 700;
+    background: linear-gradient(90deg, #c6a75e, #e0c078);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
 body.landing-page main p {
@@ -98,6 +105,7 @@ body.post-page main .post {
     border-radius: 12px;
     box-shadow: 0 4px 12px rgba(0,0,0,0.4);
     margin-bottom: 3em;
+    max-width: 750px;
 }
 
 body.post-page main .sidebar {
@@ -164,6 +172,7 @@ body.post-page main .sidebar a:hover {
     margin-bottom: 1.5em;
     font-size: 1.05rem;
     line-height: 1.9;
+    max-width: 65ch;
 }
 
 .post a {
@@ -184,13 +193,17 @@ body.post-page main .sidebar a:hover {
     box-shadow: 0 4px 12px rgba(0,0,0,0.5);
 }
 
-.post h2,
+.post h2 {
+    font-size: 1.8rem;
+}
+
 .post h3 {
-    color: #f1f5f9;
+    color: #c6a75e;
     margin-top: 2em;
     margin-bottom: 0.5em;
     border-left: 4px solid #c6a75e;
     padding-left: 0.5em;
+    font-size: 1.4rem;
 }
 
 pre {
@@ -207,11 +220,22 @@ pre a {
 }
 
 blockquote {
+    background: linear-gradient(145deg, #222, #1a1a1a);
     border-left: 4px solid #c6a75e;
-    padding-left: 1em;
-    color: #d0d0d0;
-    font-style: italic;
-    margin: 1.5em 0;
+    padding: 1.2em;
+    margin: 2em 0;
+    font-style: normal;
+    position: relative;
+}
+
+blockquote::before {
+    content: "§";
+    position: absolute;
+    left: -18px;
+    top: -10px;
+    font-size: 3rem;
+    color: rgba(198,167,94,0.15);
+    font-weight: bold;
 }
 
 /* === Botões dentro do post === */
@@ -252,17 +276,18 @@ blockquote {
 
 /* === Cards de posts (listagem) === */
 .post-card {
-    padding: 20px;
-    margin-bottom: 20px;
-    border: 1px solid rgba(255,255,255,0.08);
-    border-radius: 8px;
-    transition: 0.3s;
-    background-color: #222;
+    padding: 25px;
+    margin-bottom: 25px;
+    border: 1px solid rgba(255,255,255,0.05);
+    border-radius: 12px;
+    transition: all 0.3s ease;
+    background: linear-gradient(145deg, #222, #1a1a1a);
 }
 
 .post-card:hover {
     border-color: #c6a75e;
-    transform: translateY(-3px);
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.6);
 }
 
 .post-card a {
@@ -283,14 +308,37 @@ blockquote {
     margin-top: 5px;
 }
 
+.post-categories {
+    margin-top: 10px;
+}
+
+.category-badge {
+    display: inline-block;
+    padding: 4px 10px;
+    margin-right: 6px;
+    font-size: 0.75rem;
+    background: rgba(198,167,94,0.15);
+    color: #c6a75e;
+    border: 1px solid rgba(198,167,94,0.4);
+    border-radius: 20px;
+}
+
 /* === Página de transição === */
 #page-transition {
-    opacity: 1;
-    transition: opacity 0.4s ease;
+    opacity: 0;
+    transform: translateY(10px);
+    animation: fadeIn 0.6s ease forwards;
 }
 
 #page-transition.fade-out {
     opacity: 0;
+}
+
+@keyframes fadeIn {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }
 
 /* === Responsivo === */
@@ -311,6 +359,10 @@ blockquote {
 
     body.post-page main .sidebar {
         margin-top: 30px;
+        border-left: 1px solid rgba(255,255,255,0.05);
+        position: sticky;
+        top: 120px;
+        height: fit-content;
     }
 
     body.post-page main .post {
@@ -328,4 +380,36 @@ blockquote {
     body.landing-page main {
         padding: 0 15px;
     }
+
+    .post-reading-time {
+    display: block;
+    font-size: 0.9rem;
+    color: #a78fff;
+    margin-bottom: 2em;
+}
+
+.toc {
+    font-size: 0.9rem;
+    margin-bottom: 2em;
+}
+
+.toc ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+.toc li {
+    margin-bottom: 8px;
+}
+
+.toc a {
+    text-decoration: none;
+    color: #a78fff;
+    transition: 0.3s;
+}
+
+.toc a:hover {
+    color: #c6a75e;
+}
+
 }
