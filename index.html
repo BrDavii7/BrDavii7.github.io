@@ -9,15 +9,21 @@
 
 <body class="landing-page">
 
+<div id="reading-progress"></div>
+
 <header class="navbar">
     <div class="nav-container">
+
         <a href="/" class="logo">Direito</a>
 
-        <nav>
+        <button class="menu-toggle" onclick="toggleMenu()">☰</button>
+
+        <nav id="nav-links">
             <a href="/">Início</a>
             <a href="/posts/">Artigos</a>
             <a href="/sobre/">Sobre</a>
         </nav>
+
     </div>
 </header>
 
@@ -30,6 +36,52 @@
 </div>
 
 </main>
+
+<script>
+function toggleMenu() {
+    document.getElementById("nav-links").classList.toggle("active");
+}
+</script>
+
+<script>
+window.addEventListener('scroll', function() {
+  const scrollTop = document.documentElement.scrollTop;
+  const scrollHeight = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+  const progress = (scrollTop / scrollHeight) * 100;
+  document.getElementById('reading-progress').style.width = progress + "%";
+});
+</script>
+
+<script>
+function toggleToc() {
+    document.getElementById("toc-content").classList.toggle("active");
+}
+</script>
+
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+    const sections = document.querySelectorAll(".post h2, .post h3");
+    const tocLinks = document.querySelectorAll(".toc a");
+
+    window.addEventListener("scroll", function () {
+        let current = "";
+
+        sections.forEach(section => {
+            const sectionTop = section.offsetTop;
+            if (window.scrollY >= sectionTop - 120) {
+                current = section.getAttribute("id");
+            }
+        });
+
+        tocLinks.forEach(link => {
+            link.classList.remove("active");
+            if (link.getAttribute("href") === "#" + current) {
+                link.classList.add("active");
+            }
+        });
+    });
+});
+</script>
 
 </body>
 </html>

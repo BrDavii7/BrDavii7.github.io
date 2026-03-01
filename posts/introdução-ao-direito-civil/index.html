@@ -8,15 +8,21 @@
 
 <body class="post-page">
 
+<div id="reading-progress"></div>
+
 <header class="navbar">
     <div class="nav-container">
+
         <a href="/" class="logo">Direito</a>
 
-        <nav>
+        <button class="menu-toggle" onclick="toggleMenu()">☰</button>
+
+        <nav id="nav-links">
             <a href="/">Início</a>
             <a href="/posts/">Artigos</a>
             <a href="/sobre/">Sobre</a>
         </nav>
+
     </div>
 </header>
 
@@ -86,16 +92,11 @@ Não podemos esquecer que é principalmente regulamentado pelo (<a href="https:/
 </article>
 
 <aside class="sidebar">
-    <h3>Posts Recentes</h3>
-    <ul>
-      
-      
-        <li><a href="/posts/introdu%C3%A7%C3%A3o-ao-direito-civil/">Mini Introdução ao Direito Civil</a></li>
-      
-    </ul>
-    <h3>Sumário</h3>
-<div class="toc">
-  <nav id="TableOfContents">
+
+    
+    <h3 onclick="toggleToc()" class="toc-title">Sumário ▼</h3>
+    <div class="toc" id="toc-content">
+        <nav id="TableOfContents">
   <ul>
     <li>
       <ul>
@@ -107,10 +108,66 @@ Não podemos esquecer que é principalmente regulamentado pelo (<a href="https:/
     </li>
   </ul>
 </nav>
-</div>
+    </div>
+
+    
+    <h3>Posts Recentes</h3>
+    <ul>
+      
+      
+        <li><a href="/posts/introdu%C3%A7%C3%A3o-ao-direito-civil/">Mini Introdução ao Direito Civil</a></li>
+      
+    </ul>
+
 </aside>
 
 </main>
+
+<script>
+function toggleMenu() {
+    document.getElementById("nav-links").classList.toggle("active");
+}
+</script>
+
+<script>
+window.addEventListener('scroll', function() {
+  const scrollTop = document.documentElement.scrollTop;
+  const scrollHeight = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+  const progress = (scrollTop / scrollHeight) * 100;
+  document.getElementById('reading-progress').style.width = progress + "%";
+});
+</script>
+
+<script>
+function toggleToc() {
+    document.getElementById("toc-content").classList.toggle("active");
+}
+</script>
+
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+    const sections = document.querySelectorAll(".post h2, .post h3");
+    const tocLinks = document.querySelectorAll(".toc a");
+
+    window.addEventListener("scroll", function () {
+        let current = "";
+
+        sections.forEach(section => {
+            const sectionTop = section.offsetTop;
+            if (window.scrollY >= sectionTop - 120) {
+                current = section.getAttribute("id");
+            }
+        });
+
+        tocLinks.forEach(link => {
+            link.classList.remove("active");
+            if (link.getAttribute("href") === "#" + current) {
+                link.classList.add("active");
+            }
+        });
+    });
+});
+</script>
 
 </body>
 </html>
